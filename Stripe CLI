@@ -1,0 +1,13 @@
+stripe checkout sessions create  \
+  --mode=payment \
+  --ui-mode=hosted_page \
+  --success-url={{SUCCESS_URL}} \
+  --cancel-url={{CANCEL_URL}} \
+  -d "line_items[0][price]"={{PRICE_ID}} \
+  -d "line_items[0][quantity]"=1 \
+  --billing-address-collection=auto \
+  -d "phone_number_collection[enabled]"=true \
+  --allow-promotion-codes=false \
+  --submit-type=auto \
+  --integration-identifier=hosted_web_0001 \
+  --origin-context=web
