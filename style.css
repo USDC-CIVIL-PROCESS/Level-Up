@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: #111;
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+.header p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.container {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.payment-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.payment-card h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.description {
+    color: #666;
+    line-height: 1.6;
+}
+
+.price {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pay-button:hover {
+    opacity: 0.85;
+}
+
+.pay-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.message {
+    min-height: 20px;
+    margin-top: 15px;
+    color: #c00;
+}
+
+.secure {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    font-size: 14px;
+}
